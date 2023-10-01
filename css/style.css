@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    /* nowrap
+    The flex items are laid out in a single line which may cause the flex container to overflow. The cross-start is either equivalent to start or before depending on the flex-direction value. This is the default value.
+    
+    wrap
+    The flex items break into multiple lines. The cross-start is either equivalent to start or before depending flex-direction value and the cross-end is the opposite of the specified cross-start.
+    
+    wrap-reverse
+    Behaves the same as wrap but cross-start and cross-end are permuted. */
+}
+.left-col,.right-col{
+    flex-basis: 50%;
+    height: 100vh;
+    position: relative;
+}
+.logo{
+    display: block;
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.content{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 60px;
+    color: #05a35f;
+    line-height: 70px;
+    margin: 25px 0;
+}
+.content p{
+    color: #777;
+    font-size: 17px ;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+button{
+    width: 200px;
+    border: none;
+    background-color: #05a35f;
+    color: #fff;
+    box-shadow: 0px 10px 10px 1px rgba(219, 219, 219,0.5);
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 25px 0;
+}
+.slider{
+    display: flex;
+    width: 100%;
+    height: 60%;
+
+}
+.slider img{
+    width: 100%;
+}
+.slider-content{
+    width: 100%;
+    height: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background-color: #05a35f;
+}
+.slider-content h2{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 100;
+}
+.slider-content p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+hr{
+    border: none;
+    background-color: #b5e3cf;
+    width: 250px ;
+    height: 1px;
+    margin: 20px 0 30px;
+}
+.controller{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+}
+.controller img{
+    width: 45px;
+    cursor: pointer;
+}
+.vertical-line{
+   width: 2px ;
+   height: 30px;
+   background-color:  #b5e3cf;
+
+}
+
+/* media  quaries  */
+@media (max-width: 1169px) {
+    .logo {
+     
+        margin-left: 64px;
+    }
+    .content {
+        top: 42%;
+        left: 64px;
+       
+    }
+    .content h1 {
+        font-size: 46px;
+       
+        line-height: 58px;
+        margin: 18px 0;
+    }
+    .content p {
+        
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+    button {
+        width: 175px;
+        font-size: 17px;
+        cursor: pointer;
+        padding: 19px 0;
+    }
+    .slider {
+        height: 50%;
+    }
+    .slider-content {
+        height: 50%;
+      
+    }
+    .slider-content h2 {
+        font-size: 20px;
+       
+    }
+    hr {
+       
+        margin: 30px 0 23px;
+    }
+    .controller {
+       
+        padding: 40px 15px 15px 0px;
+    }
+}
+@media (max-width: 991px) {
+    .content {
+        top: 39%;
+        left: 64px;
+    }
+}
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 33px;
+    }
+    .content {
+        top: 36%;
+        left: 33px;
+    }
+    .content h1 {
+        font-size: 32px;
+        line-height: 38px;
+        margin: 17px 0px;
+    }
+    button {
+        width: 124px;
+        font-size: 13px;
+        cursor: pointer;
+        padding: 14px 0;
+    }
+    .content p {
+     
+        margin-bottom: 22px;
+    }
+    .slider {
+        height: 40%;
+    }
+    .slider-content {
+     
+        height: 60%;
+        padding-top: 60px;
+        padding-left: 11px;
+       
+    }
+}
+@media (max-width:575px){
+    .wrapper {
+        display: block;
+       
+    }
+    .left-col, .right-col {
+      
+        height: 100vh;
+      
+    }
+    .content h1 {
+      
+        margin: 8px 0px;
+    }
+    .slider {
+        height: 50%;
+    }
+    .slider-content {
+     
+        height: 50%;
+       padding-top: 30px;
+       
+    }
+    .slider-content p {
+        padding-top: 20px;
+        font-size: 13px;
+        
+    }
+}
+@media (max-width:468px){
+    
+}
